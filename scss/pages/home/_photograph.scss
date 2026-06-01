@@ -1,0 +1,43 @@
+.photograph-section {
+  &__container {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__mark {
+    color: var(--color-brand-light);
+    height: 110px;
+    font-size: 350px;
+    margin-bottom: 110px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  &__bio {
+    max-width: 616px;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  &__underline {
+    fill: var(--color-brand-normal);
+    width: 302px;
+    height: 32px;
+    margin-bottom: 50px;
+  }
+
+  &__sign {
+    font-size: 60px;
+    margin-bottom: 14px;
+  }
+}

@@ -1,0 +1,14 @@
+.services-section {
+  padding: 180px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 54px;
+    text-align: center;
+  }
+}

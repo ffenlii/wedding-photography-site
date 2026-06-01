@@ -1,0 +1,20 @@
+.hero-section {
+  background-image: url("../../../images/hero-background.jpg");
+  padding: 350px 0 360px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+
+  &__title {
+    font-weight: 600;
+    font-size: 80px;
+    color: var(--color-white);
+  }
+
+  &__subtitle {
+    font-size: 64px;
+    color: var(--color-brand-normal);
+    letter-spacing: 5%;
+  }
+}

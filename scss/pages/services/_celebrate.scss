@@ -1,0 +1,16 @@
+.celebrate-section {
+  background-color: var(--color-white-f8);
+  padding: 35px 0 115px;
+
+  &__decor {
+    width: 98px;
+    height: 146px;
+    fill: var(--color-brand-dark);
+  }
+
+  &__subtitle {
+    max-width: 1170px;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+}

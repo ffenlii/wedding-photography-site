@@ -1,0 +1,30 @@
+.faq-section {
+  padding: 0 120px 70px;
+
+  &__subtitle {
+    margin-bottom: 87px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__question {
+    padding: 24px 40px;
+    border-bottom: 1px solid var(--color-grey-c6);
+  }
+
+  &__decor {
+    fill: var(--color-brand-dark);
+    width: 46px;
+    height: 46px;
+  }
+}

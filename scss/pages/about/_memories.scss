@@ -1,0 +1,32 @@
+.memories-section {
+  padding: 75px 0 160px;
+  text-align: start;
+  position: relative;
+
+  &__subtitle {
+    margin-bottom: 8px;
+  }
+
+  &__background {
+    background-color: var(--color-white-f8);
+  }
+
+  &__text {
+    font-weight: 300;
+    padding: 23px 0 46px;
+    max-width: 530px;
+    margin-bottom: 46px;
+  }
+
+  &__image-one {
+    position: absolute;
+    top: 30px;
+    right: 400px;
+  }
+
+  &__image-two {
+    position: absolute;
+    top: 200px;
+    right: 110px;
+  }
+}

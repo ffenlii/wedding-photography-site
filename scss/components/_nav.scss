@@ -1,0 +1,25 @@
+.nav {
+  font-size: 22px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+    align-items: center;
+  }
+
+  &__link {
+    color: var(--color-grey-dark);
+    text-transform: uppercase;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-brand-dark);
+    }
+  }
+
+  &__logo {
+    width: 280px;
+    height: 100px;
+  }
+}

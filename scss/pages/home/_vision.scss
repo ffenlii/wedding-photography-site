@@ -1,0 +1,45 @@
+.vision-section {
+  background-color: var(--color-white-f8);
+  background-image: url("../../../images/vision-section-background.jpg");
+  background-repeat: no-repeat;
+  padding: 63px 130px;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__card {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    );
+    width: 420px;
+    height: 570px;
+    padding: 26px 16px;
+    box-shadow: 0 0 0 10px var(--color-white);
+    border: 0.5px solid var(--color-brand-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 60px;
+    color: var(--color-grey-light);
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    font-weight: 300;
+    max-width: 320px;
+  }
+
+  &__icon {
+    fill: var(--color-brand-dark);
+    margin-bottom: 24px;
+    width: 60px;
+    height: 100px;
+  }
+}

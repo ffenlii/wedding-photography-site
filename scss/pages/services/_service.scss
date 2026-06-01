@@ -1,0 +1,51 @@
+.service-section {
+  padding: 140px 0 125px;
+
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 78px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+  }
+
+  &__item {
+    width: calc((100% - 80px) / 3);
+  }
+
+  &__image {
+    margin-bottom: 48px;
+  }
+
+  &__info {
+    padding: 0 32px;
+
+    &-title {
+      font-size: 64px;
+      margin-bottom: 12px;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 270px;
+      align-items: flex-start;
+      max-width: 286px;
+    }
+
+    &-session {
+      color: var(--color-brand-normal);
+      margin: 24px 0 0;
+    }
+
+    &-price {
+      font-size: 64px;
+    }
+  }
+}

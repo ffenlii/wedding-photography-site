@@ -1,0 +1,42 @@
+.quality-section {
+  text-align: start;
+  position: relative;
+  padding: 70px 0 500px;
+
+  &__title {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+
+  .prob {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 120px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__info {
+    font-weight: 300;
+    margin-bottom: 28px;
+    max-width: 606px;
+  }
+
+  &__image {
+    position: absolute;
+
+    &-one {
+      top: 50px;
+      left: 320px;
+    }
+
+    &-two {
+      right: 170px;
+      bottom: 200px;
+    }
+  }
+}

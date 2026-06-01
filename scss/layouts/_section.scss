@@ -1,0 +1,11 @@
+.section {
+  &__subtitle {
+    font-size: 64px;
+    color: var(--color-grey-normal);
+    font-weight: 400;
+
+    &--limited {
+      max-width: 1060px;
+    }
+  }
+}

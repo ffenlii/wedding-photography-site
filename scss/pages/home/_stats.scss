@@ -1,0 +1,26 @@
+.stats-section {
+  padding: 98px 0 130px;
+  text-align: center;
+
+  &__subtitle {
+    font-size: 40px;
+    margin: 0 auto 64px;
+    max-width: 755px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  &__number {
+    font-size: 128px;
+    color: var(--color-brand-normal);
+    margin-bottom: 6px;
+  }
+
+  &__description {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,22 @@
+@use "./base";
+
+@use "./utils/variables";
+@use ".//utils/fonts";
+@use "./utils/texts";
+@use "./utils/utils";
+@use "./utils/typography";
+
+@use "./components/buttons";
+@use "./components/_service-card";
+@use "./components/testinomials-card";
+@use "./components/nav";
+
+@use "./layouts/header";
+@use "./layouts/container";
+@use "./layouts/section";
+@use "./layouts/footer";
+@use "./layouts/checkerboard";
+
+@use "./pages/home";
+@use "./pages/about";
+@use "./pages/services";

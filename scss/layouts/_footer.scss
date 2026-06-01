@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--color-white-f8);
+  text-align: center;
+  padding-bottom: 20px;
+
+  &__info {
+    font-weight: 300;
+    max-width: 610px;
+    margin: 33px auto 54px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 32px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--color-brand-dark);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+      fill: var(--color-brand-normal);
+    }
+  }
+
+  &__copyright {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
