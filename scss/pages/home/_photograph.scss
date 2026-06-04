@@ -1,7 +1,18 @@
+@use "../../utils/variables" as *;
+
 .photograph-section {
   &__container {
     display: flex;
     gap: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
   }
 
   &__mark {
@@ -9,6 +20,16 @@
     height: 110px;
     font-size: 350px;
     margin-bottom: 110px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 300px;
+      margin-bottom: 54px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 230px;
+      margin-bottom: 8px;
+    }
   }
 
   &__info {
@@ -21,12 +42,33 @@
   &__title {
     font-size: 48px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 44px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 38px;
+    }
   }
 
   &__bio {
     max-width: 616px;
     margin-bottom: 30px;
     font-size: 28px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__underline {
@@ -34,10 +76,32 @@
     width: 302px;
     height: 32px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 30px;
+    }
   }
 
   &__sign {
     font-size: 60px;
     margin-bottom: 14px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 54px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 44px;
+    }
+  }
+
+  &__image {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      display: flex;
+    }
   }
 }

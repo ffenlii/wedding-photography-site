@@ -1,0 +1,11 @@
+.portfolio-page-section {
+  padding: 118px 0 150px;
+
+  &__container {
+    padding: 116px 0 86px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}

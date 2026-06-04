@@ -1,8 +1,23 @@
+@use "../../utils/variables" as *;
+
 .vision-section {
   background-color: var(--color-white-f8);
   background-image: url("../../../images/vision-section-background.jpg");
   background-repeat: no-repeat;
   padding: 63px 130px;
+
+  @media screen and (max-width: $bp-desktop) {
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 40px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 30px 10px;
+  }
 
   &__container {
     display: flex;
@@ -23,17 +38,57 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 400px;
+      height: 530px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 290px;
+      height: 430px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 220px;
+      height: 386px;
+      padding: 10px;
+    }
   }
 
   &__title {
     font-size: 60px;
     color: var(--color-grey-light);
     margin-bottom: 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 54px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+    }
   }
 
   &__info {
     font-weight: 300;
     max-width: 320px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
   }
 
   &__icon {
@@ -41,5 +96,22 @@
     margin-bottom: 24px;
     width: 60px;
     height: 100px;
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 50px;
+      height: 80px;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 40px;
+      height: 70px;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 30px;
+      height: 60px;
+    }
   }
 }

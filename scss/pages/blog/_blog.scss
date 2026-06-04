@@ -1,0 +1,20 @@
+.blog-section {
+  padding: 108px 0 280px;
+
+  &__subtitle {
+    margin: 32px 0 52px;
+  }
+
+  &__info {
+    font-weight: 300;
+    max-width: 625px;
+    margin: 0 auto 64px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+  }
+}

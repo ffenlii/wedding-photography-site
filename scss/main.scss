@@ -10,6 +10,8 @@
 @use "./components/_service-card";
 @use "./components/testinomials-card";
 @use "./components/nav";
+@use "./components/portfolio-card";
+@use "./components/blog-card";
 
 @use "./layouts/header";
 @use "./layouts/container";
@@ -20,3 +22,7 @@
 @use "./pages/home";
 @use "./pages/about";
 @use "./pages/services";
+@use "./pages/portfolio";
+@use "./pages/blog";
+@use "./pages/404-page" as *;
+@use "./pages/contact";

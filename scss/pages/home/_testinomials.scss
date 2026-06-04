@@ -1,7 +1,17 @@
+@use "../../utils/variables" as *;
+
 .testinomials-section {
   &__title {
     font-size: 70px;
     margin-bottom: 17px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 54px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 42px;
+    }
   }
 
   &__container {
@@ -10,7 +20,15 @@
     gap: 24px;
     align-items: center;
     justify-content: center;
-    padding: 78px 0;
+    padding: 78px 8px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 48px 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      padding: 30px 20px;
+    }
   }
 
   &__arrow {
@@ -23,6 +41,10 @@
       color 0.3s,
       background-color 0.3s,
       transform 0.2s;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
 
     &:hover {
       background-color: var(--color-brand-normal);

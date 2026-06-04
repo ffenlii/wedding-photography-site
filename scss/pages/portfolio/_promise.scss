@@ -1,0 +1,35 @@
+.promise-section {
+  padding: 134px 0;
+  background-image: url("../../../images/promise-section-background.jpg");
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    );
+    width: 932px;
+    height: 246px;
+    padding: 48px 100px;
+    border: 1px solid var(--color-brand-normal);
+    box-shadow: 0 0 0 18px var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 60px;
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}

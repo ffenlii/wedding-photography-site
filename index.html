@@ -26,6 +26,13 @@
             <li><a class="nav__link" href="#">portfolio</a></li>
             <li><a class="nav__link" href="#">blog</a></li>
             <li><a class="nav__link" href="#">contact</a></li>
+            <li>
+              <button class="nav__button">
+                <svg class="nav__button-icon">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
@@ -57,7 +64,11 @@
       <section class="photograph-section">
         <div class="container">
           <div class="photograph-section__container">
-            <img src="./images/photograph-section.png" alt="Tessa" />
+            <img
+              class="photograph-section__image section__image"
+              src="./images/photograph-section.png"
+              alt="Tessa"
+            />
             <div class="photograph-section__info">
               <p class="photograph-section__mark font-forum">&ldquo;</p>
               <h2 class="photograph-section__title">Hello, My Name is Tessa</h2>
@@ -82,7 +93,7 @@
           </div>
         </div>
       </section>
-      <section class="services-section">
+      <!--  <section class="services-section">
         <div class="container">
           <h2 class="text-title">SERVICES</h2>
           <p class="services-section__subtitle section__subtitle">
@@ -136,7 +147,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <section class="vision-section">
         <div class="container">
           <div class="vision-section__container">
@@ -177,10 +188,12 @@
             </div>
             <div class="portfolio-section__images">
               <img
+                class="portfolio-section__image portfolio-section__image-first"
                 src="./images/home-portfolio-section-couple.jpg"
                 alt="Happy couple"
               />
               <img
+                class="portfolio-section__image portfolio-section__image-second"
                 src="./images/home-portfolio-section-michelle.jpg"
                 alt="Fiancee Michelle"
               />
@@ -196,47 +209,45 @@
           <h2 class="testinomials-section__title font-ephesis">
             Client Testimonials
           </h2>
-          <div class="container">
-            <div class="testinomials-section__container">
-              <button class="testinomials-section__arrow" type="button">
-                &lt;
-              </button>
-              <ul>
-                <li>
-                  <article class="testinomials-card">
-                    <div class="testinomials-card__info">
-                      <p class="testinomials-card__mark font-forum">&ldquo;</p>
-                      <p>
-                        Showcasing your Big Day in a Memorable & Unforgettable
-                        way.
-                      </p>
-                      <p class="testinomials-card__names">Sarah & Luke</p>
-                    </div>
-                    <img
-                      src="./images/testinomials-section-couple.jpg"
-                      alt="Couple Sarah & Luke"
-                    />
-                  </article>
-                </li>
-                <li>
-                  <article class="testinomials-card">
-                    <!-- something -->
-                  </article>
-                </li>
-                <li>
-                  <article class="testinomials-card">
-                    <!-- something -->
-                  </article>
-                </li>
-              </ul>
-              <button class="testinomials-section__arrow" type="button">
-                &gt;
-              </button>
-            </div>
+
+          <div class="testinomials-section__container">
+            <button class="testinomials-section__arrow" type="button">
+              &lt;
+            </button>
+            <ul>
+              <li>
+                <article class="testinomials-card">
+                  <div class="testinomials-card__info">
+                    <p class="testinomials-card__mark font-forum">&ldquo;</p>
+                    <p class="testinomials-card__text">
+                      Showcasing your Big Day in a Memorable & Unforgettable
+                      way.
+                    </p>
+                    <p class="testinomials-card__text testinomials-card__names">
+                      Sarah & Luke
+                    </p>
+                  </div>
+                  <img
+                    class="testinomials-card__image section__image"
+                    src="./images/testinomials-section-couple.jpg"
+                    alt="Couple Sarah & Luke"
+                  />
+                </article>
+              </li>
+              <li>
+                <article class="testinomials-card"></article>
+              </li>
+              <li>
+                <article class="testinomials-card"></article>
+              </li>
+            </ul>
+            <button class="testinomials-section__arrow" type="button">
+              &gt;
+            </button>
           </div>
         </div>
       </section>
-      <section class="stats-section">
+      <!--  <section class="stats-section">
         <div class="container">
           <h2 class="visually-hidden">Our statistics</h2>
           <h3 class="stats-section__subtitle">
@@ -312,9 +323,9 @@
             <img src="./images/contact-section-image.jpg" alt="Happy couple" />
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <nav class="nav font-playfair">
           <ul class="nav__container">
@@ -362,6 +373,6 @@
         </div>
         <p class="footer__copyright">Copyright 2024 All Rights Reserved</p>
       </div>
-    </footer>
+    </footer>  -->
   </body>
 </html>

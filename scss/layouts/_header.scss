@@ -1,13 +1,18 @@
+@use "../utils/variables" as *;
+
 .header {
   background-image: linear-gradient(
     rgba(245, 245, 245, 0.8),
     rgba(245, 245, 245, 0.8)
   );
-
   padding: 8px 117px 0;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 4px 0;
+  }
 }

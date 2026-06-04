@@ -1,14 +1,44 @@
+@use "../../utils/variables" as *;
+
 .portfolio-section {
   padding: 107px 0 60px;
 
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 84px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 68px 0 40px;
+  }
+
   &__subtitle {
     margin-bottom: 54px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 48px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 40px;
+    }
   }
 
   &__container {
     display: flex;
     align-items: flex-end;
     margin-bottom: 60px;
+
+    @media screen and (max-width: $bp-desktop) {
+      position: relative;
+      align-items: flex-start;
+      margin-bottom: 150px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      position: relative;
+      align-items: flex-end;
+      margin-bottom: 24px;
+    }
   }
 
   &__info {
@@ -16,17 +46,37 @@
     width: 570px;
     padding: 10px 48px 70px 80px;
     text-align: left;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 10px 20px 70px;
+    }
   }
 
   &__number {
     font-size: 120px;
     color: var(--color-brand-dark);
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 100px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 80px;
+    }
   }
 
   &__names {
     font-size: 46px;
     letter-spacing: 5%;
     margin-bottom: 4px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 38px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+    }
   }
 
   &__content {
@@ -37,5 +87,34 @@
   &__images {
     display: flex;
     gap: 40px;
+  }
+
+  &__image {
+    @media screen and (max-width: $bp-desktop) {
+      width: 250px;
+    }
+
+    &-first {
+      @media screen and (max-width: $bp-tablet) {
+        display: flex;
+        flex-shrink: 1;
+        min-width: 0;
+        max-width: 100%;
+        object-fit: cover;
+        height: 350px;
+      }
+    }
+
+    &-second {
+      @media screen and (max-width: $bp-desktop) {
+        position: absolute;
+        top: 160px;
+        right: -20px;
+      }
+
+      @media screen and (max-width: $bp-tablet) {
+        display: none;
+      }
+    }
   }
 }

@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .text-title {
   font-family: "Raleway";
   font-weight: 500;
@@ -5,4 +7,12 @@
   letter-spacing: 20%;
   color: var(--color-brand-normal);
   text-transform: uppercase;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 16px;
+  }
 }

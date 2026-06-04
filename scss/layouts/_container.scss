@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .container {
   /* Задаємо розмір, щоб на великих екранах сайт не плив */
   width: 100%;
@@ -6,4 +8,8 @@
   margin: 0 auto;
   /* Щоб текст не прилипав */
   padding: 0 24px;
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0 18px;
+  }
 }

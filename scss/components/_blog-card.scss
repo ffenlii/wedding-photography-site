@@ -1,0 +1,30 @@
+.blog-card {
+  max-width: 515px;
+  text-align: start;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  &__accent {
+    font-size: 24px;
+    color: var(--color-brand-normal);
+    letter-spacing: 5%;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+
+    &--distance {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__image {
+    width: 515px;
+    height: 385px;
+    margin-bottom: 30px;
+  }
+}

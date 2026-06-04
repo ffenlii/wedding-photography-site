@@ -1,11 +1,33 @@
+@use "../utils/variables" as *;
+
 .section {
   &__subtitle {
     font-size: 64px;
     color: var(--color-grey-normal);
     font-weight: 400;
 
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 30px;
+    }
+
     &--limited {
       max-width: 1060px;
     }
+  }
+
+  &__image {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
   }
 }

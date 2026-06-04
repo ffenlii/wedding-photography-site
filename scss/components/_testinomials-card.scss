@@ -1,7 +1,17 @@
+@use "../utils/variables" as *;
+
 .testinomials-card {
   display: flex;
   gap: 48px;
   justify-content: center;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 24px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    flex-direction: column-reverse;
+  }
 
   &__info {
     width: 450px;
@@ -13,6 +23,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 400px;
+      height: 360px;
+      padding: 0 30px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: auto;
+      height: 214px;
+    }
   }
 
   &__mark {
@@ -20,10 +41,33 @@
     font-size: 200px;
     width: 20px;
     height: 40px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 140px;
+      height: 30px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 100px;
+    }
   }
 
   &__names {
     font-weight: 300;
     text-transform: uppercase;
+  }
+
+  &__text {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+    }
+  }
+
+  &__image {
+    @media screen and (max-width: $bp-mobile) {
+      height: 230px;
+      width: auto;
+      object-position: top;
+    }
   }
 }

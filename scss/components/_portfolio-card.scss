@@ -1,0 +1,16 @@
+.portfolio-card {
+  margin-bottom: 120px;
+  padding-bottom: 20px;
+  background-color: var(--color-white-f8);
+
+  &__image {
+    width: 370px;
+    height: 420px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+}
