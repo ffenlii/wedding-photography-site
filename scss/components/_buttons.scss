@@ -33,6 +33,11 @@
 
   &__service-card {
     padding: 16px 34px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 10px;
+      font-size: 15px;
+    }
   }
 
   &__portfolio-section {
@@ -48,6 +53,15 @@
   &__contact-section {
     padding: 13px 64px;
     max-width: 185px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 10px 30px;
+      max-width: 144px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      max-width: 120px;
+    }
   }
 
   &__about-section {

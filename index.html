@@ -6,6 +6,11 @@
     <title>wedding-photography</title>
 
     <link rel="stylesheet" href="./css/main.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -93,61 +98,69 @@
           </div>
         </div>
       </section>
-      <!--  <section class="services-section">
+      <section class="services-section">
         <div class="container">
           <h2 class="text-title">SERVICES</h2>
           <p class="services-section__subtitle section__subtitle">
             What I Offer
           </p>
-          <ul class="services-section__list">
-            <li>
-              <article class="service-card">
-                <svg class="service-card__icon">
-                  <use
-                    href="./images/icons.svg#icon-services-section-wedding"
-                  ></use>
-                </svg>
-                <h3 class="service-card__title font-ephesis">Wedding</h3>
-                <p class="service-card__info">Per Session</p>
-                <p class="service-card__price">$2999</p>
-                <button class="button__service-card button" type="button">
-                  More Details
-                </button>
-              </article>
-            </li>
-            <li>
-              <article class="service-card">
-                <svg class="service-card__icon">
-                  <use
-                    href="./images/icons.svg#icon-services-section-portrait"
-                  ></use>
-                </svg>
-                <h3 class="service-card__title font-ephesis">Portrait</h3>
-                <p class="service-card__info">Per Session</p>
-                <p class="service-card__price">$399</p>
-                <button class="button__service-card button" type="button">
-                  More Details
-                </button>
-              </article>
-            </li>
-            <li>
-              <article class="service-card">
-                <svg class="service-card__icon">
-                  <use
-                    href="./images/icons.svg#icon-services-section-engagement"
-                  ></use>
-                </svg>
-                <h3 class="service-card__title font-ephesis">Engagement</h3>
-                <p class="service-card__info">Per Session</p>
-                <p class="service-card__price">$1999</p>
-                <button class="button__service-card button" type="button">
-                  More Details
-                </button>
-              </article>
-            </li>
-          </ul>
+          <div class="services-section__slider swiper-container">
+            <ul class="services-section__list swiper-wrapper">
+              <li class="swiper-slide">
+                <article class="service-card">
+                  <svg class="service-card__icon">
+                    <use
+                      href="./images/icons.svg#icon-services-section-wedding"
+                    ></use>
+                  </svg>
+                  <h3 class="service-card__title font-ephesis">Wedding</h3>
+                  <p class="service-card__info">Per Session</p>
+                  <p class="service-card__price">$2999</p>
+                  <button class="button__service-card button" type="button">
+                    More Details
+                  </button>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="service-card">
+                  <svg class="service-card__icon">
+                    <use
+                      href="./images/icons.svg#icon-services-section-portrait"
+                    ></use>
+                  </svg>
+                  <h3 class="service-card__title font-ephesis">Portrait</h3>
+                  <p class="service-card__info">Per Session</p>
+                  <p class="service-card__price">$399</p>
+                  <button class="button__service-card button" type="button">
+                    More Details
+                  </button>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="service-card">
+                  <svg class="service-card__icon">
+                    <use
+                      href="./images/icons.svg#icon-services-section-engagement"
+                    ></use>
+                  </svg>
+                  <h3 class="service-card__title font-ephesis">Engagement</h3>
+                  <p class="service-card__info">Per Session</p>
+                  <p class="service-card__price">$1999</p>
+                  <button class="button__service-card button" type="button">
+                    More Details
+                  </button>
+                </article>
+              </li>
+            </ul>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+            </div>
+          </div>
         </div>
-      </section> -->
+      </section>
       <section class="vision-section">
         <div class="container">
           <div class="vision-section__container">
@@ -247,32 +260,32 @@
           </div>
         </div>
       </section>
-      <!--  <section class="stats-section">
+      <section class="stats-section">
         <div class="container">
           <h2 class="visually-hidden">Our statistics</h2>
           <h3 class="stats-section__subtitle">
             HELPING COUPLES BRING TO LIFE THEIR WEDDING DREAMS
           </h3>
           <ul class="stats-section__list">
-            <li>
+            <li class="stats-section__item">
               <p class="stats-section__number font-playfair-ds">12</p>
               <p class="stats-section__description font-ephesis">
                 Years Experience
               </p>
             </li>
-            <li>
+            <li class="stats-section__item">
               <p class="stats-section__number font-playfair-ds">10k</p>
               <p class="stats-section__description font-ephesis">
                 Photos Delivered
               </p>
             </li>
-            <li>
+            <li class="stats-section__item">
               <p class="stats-section__number font-playfair-ds">300</p>
               <p class="stats-section__description font-ephesis">
                 Events Captured
               </p>
             </li>
-            <li>
+            <li class="stats-section__item">
               <p class="stats-section__number font-playfair-ds">6</p>
               <p class="stats-section__description font-ephesis">Awards</p>
             </li>
@@ -290,7 +303,7 @@
               <form class="contact-section__form">
                 <label class="visually-hidden" for="user-name">Name</label>
                 <input
-                  class="contact-section__field"
+                  class="contact-section__field font-cormorant-gar"
                   type="text"
                   id="user-name"
                   name="user-name"
@@ -298,7 +311,7 @@
                 />
                 <label class="visually-hidden" for="user-email">Email</label>
                 <input
-                  class="contact-section__field"
+                  class="contact-section__field font-cormorant-gar"
                   type="email"
                   id="user-email"
                   name="user-email"
@@ -308,7 +321,7 @@
                   >Message</label
                 >
                 <textarea
-                  class="contact-section__field contact-section__textarea"
+                  class="contact-section__field contact-section__textarea font-cormorant-gar"
                   type="text"
                   id="user-message"
                   name="user-message"
@@ -320,12 +333,16 @@
                 </button>
               </form>
             </div>
-            <img src="./images/contact-section-image.jpg" alt="Happy couple" />
+            <img
+              class="section__image contact-section__image"
+              src="./images/contact-section-image.jpg"
+              alt="Happy couple"
+            />
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <nav class="nav font-playfair">
           <ul class="nav__container">
@@ -373,6 +390,10 @@
         </div>
         <p class="footer__copyright">Copyright 2024 All Rights Reserved</p>
       </div>
-    </footer>  -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/slider.js"></script>
   </body>
 </html>

@@ -1,26 +1,87 @@
+@use "../../utils/variables" as *;
+
 .stats-section {
   padding: 98px 0 130px;
   text-align: center;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 72px 0 108px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 58px 0 80px;
+  }
 
   &__subtitle {
     font-size: 40px;
     margin: 0 auto 64px;
     max-width: 755px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 48px;
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
   }
 
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     justify-content: space-around;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__number {
     font-size: 128px;
     color: var(--color-brand-normal);
     margin-bottom: 6px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 100px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 90px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 72px;
+    }
   }
 
   &__description {
     font-size: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 36px;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: $bp-tablet) {
+      width: calc((100% - 24px) / 2);
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: auto;
+    }
   }
 }

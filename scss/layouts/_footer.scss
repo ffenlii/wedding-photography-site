@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .footer {
   background-color: var(--color-white-f8);
   text-align: center;
@@ -7,6 +9,21 @@
     font-weight: 300;
     max-width: 610px;
     margin: 33px auto 54px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 24px;
+      margin: 24px auto 40px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+      margin: 16px auto 32px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
   }
 
   &__socials {
@@ -14,6 +31,18 @@
     justify-content: center;
     gap: 26px;
     margin-bottom: 32px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 26px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 10px;
+    }
   }
 
   &__icon {
@@ -26,10 +55,29 @@
       transform: scale(1.2);
       fill: var(--color-brand-normal);
     }
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 26px;
+      height: 26px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   &__copyright {
     font-weight: 600;
     font-size: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+    }
   }
 }

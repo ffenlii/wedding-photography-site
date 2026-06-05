@@ -1,5 +1,15 @@
+@use "../../utils/variables" as *;
+
 .services-section {
   padding: 180px 0;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 120px 0;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 80px 0;
+  }
 
   &__list {
     display: flex;
@@ -10,5 +20,17 @@
   &__subtitle {
     margin-bottom: 54px;
     text-align: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 44px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
   }
 }
