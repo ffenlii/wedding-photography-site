@@ -1,3 +1,5 @@
+@use "../../utils/variables" as *;
+
 .blog-section {
   padding: 108px 0 280px;
 
@@ -16,5 +18,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
+
+    @media screen and (max-width: $bp-desktop) {
+      flex-wrap: nowrap;
+    }
   }
 }

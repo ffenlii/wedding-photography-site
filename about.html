@@ -7,13 +7,54 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav font-playfair">
+          <ul class="nav__container">
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
+            <li>
+              <a href="./contact.html">
+                <img
+                  class="nav__logo"
+                  src="./images/logotype.svg"
+                  alt="Photograph's logo"
+              /></a>
+            </li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
+            <li>
+              <button class="nav__button">
+                <svg class="nav__button-icon">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="button__fixed modal-btn-open" type="button">
+        <svg class="button__fixed-icon">
+          <use href="./images/icons.svg#icon-dots-vertical"></use>
+        </svg>
+      </button>
+    </header>
     <main>
-      <section class="about-section">
+      <section class="hero-general-section">
+        <h1 class="visually-hidden">Main section</h1>
+      </section>
+      <section class="about-section" id="about-section">
         <div class="container">
           <h2 class="text-title">About</h2>
           <h3 class="about-section__subtitle section__subtitle">My story</h3>
           <div class="about-section__container">
-            <img src="./images/about-section-image.jpg" alt="" />
+            <img
+              class="about-section__image section__image"
+              src="./images/about-section-image.jpg"
+              alt=""
+            />
             <div class="about-section__info">
               <p class="about-section__paragraph">
                 Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt
@@ -35,17 +76,35 @@
               <svg class="about-section__icon">
                 <use href="./images/icons.svg#icon-about-section"></use>
               </svg>
-              <button class="button__about-section button" type="button">
-                View Portfolio
-              </button>
+              <a href="./portfolio.html#portfolio-section">
+                <button class="button__about-section button" type="button">
+                  View Portfolio
+                </button>
+              </a>
             </div>
           </div>
         </div>
         <div class="about-section__gallery">
-          <img src="./images/about-section-one.jpg" alt="" />
-          <img src="./images/about-section-two.jpg" alt="" />
-          <img src="./images/about-section-three.jpg" alt="" />
-          <img src="./images/about-section-four.jpg" alt="" />
+          <img
+            class="about-section__gallery-first section__image"
+            src="./images/about-section-one.jpg"
+            alt=""
+          />
+          <img
+            class="section__image"
+            src="./images/about-section-two.jpg"
+            alt=""
+          />
+          <img
+            class="section__image"
+            src="./images/about-section-three.jpg"
+            alt=""
+          />
+          <img
+            class="section__image"
+            src="./images/about-section-four.jpg"
+            alt=""
+          />
         </div>
       </section>
       <section class="facts-section">
@@ -54,13 +113,13 @@
           <h3 class="section__subtitle">A Few Facts About Myself</h3>
           <div class="checkerboard__container">
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image section__image"
               src="./images/facts-section-fiancee.jpg"
               alt=""
             />
             <div class="checkerboard__item checkerboard__info">
               <p class="checkerboard__number font-cormorant">1</p>
-              <p class="checkerboard__text">
+              <p class="checkerboard__text checkerboard__text--small">
                 Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
                 tincidunt consequat nec potenti. Justo molestie amet vulputate
                 aliquam viverra ut viverra lorem. Velit tellus vitae massa sed
@@ -68,13 +127,13 @@
               </p>
             </div>
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image section__image"
               src="./images/facts-section-couple.jpg"
               alt=""
             />
             <div class="checkerboard__item checkerboard__info">
               <p class="checkerboard__number font-cormorant">2</p>
-              <p class="checkerboard__text">
+              <p class="checkerboard__text checkerboard__text--small">
                 Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
                 tincidunt consequat nec potenti. Justo molestie amet vulputate
                 aliquam viverra ut viverra lorem. Velit tellus vitae massa sed
@@ -82,7 +141,7 @@
               </p>
             </div>
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image section__image"
               src="./images/facts-section-ceremony.jpg"
               alt=""
             />
@@ -93,7 +152,7 @@
               >
                 3
               </p>
-              <p class="checkerboard__text">
+              <p class="checkerboard__text checkerboard__text--small">
                 Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
                 tincidunt consequat nec potenti. Justo molestie amet vulputate
                 aliquam viverra ut viverra lorem. Velit tellus vitae massa sed
@@ -109,21 +168,25 @@
           <h3 class="memories-section__subtitle section__subtitle">
             Your Story, My Lens
           </h3>
-          <div class="memories-section__background">
+          <div class="memories-section__container">
             <p class="memories-section__text">
               Your wedding day is a once-in-a-lifetime event, and choosing the
               right photographer is essential to preserving its magic for years
               to come. I would be honored to be a part of your special day.
             </p>
+
+            <img
+              class="memories-section__image-one section__image"
+              src="./images/memories-section-kiss.jpg"
+              alt=""
+            />
           </div>
-          <button class="button__memories-section button" type="button">
-            Book Now
-          </button>
-          <img
-            class="memories-section__image-one"
-            src="./images/memories-section-kiss.jpg"
-            alt=""
-          />
+          <a href="./contact.html#contact-section">
+            <button class="button__memories-section button" type="button">
+              Book Now
+            </button>
+          </a>
+
           <img
             class="memories-section__image-two"
             src="./images/memories-section-build.jpg"
@@ -132,5 +195,86 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav font-playfair">
+          <ul class="nav__container">
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
+            <li>
+              <a href="./index.html">
+                <img
+                  class="nav__logo"
+                  src="./images/logotype.svg"
+                  alt="Photograph's logo"
+              /></a>
+            </li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <p class="footer__info">
+          Lorem ipsum dolor sit amet consectetur. Morbi volut tempus posuere
+          viverra massa fames sed. Dignissim urisus et ac egestas dignissim.
+        </p>
+        <div class="footer__socials">
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-twiter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-you-tube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copyright">Copyright 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <div class="modal is-hidden">
+      <div class="modal__window">
+        <button class="modal__button modal-btn-close" type="button">
+          <svg class="modal__button-icon">
+            <use href="./images/icons.svg#icon-cancel"></use>
+          </svg>
+        </button>
+        <ul class="modal__nav">
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./index.html">home</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./about.html">about</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./services.html">services</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./portfolio.html">portfolio</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./blog.html">blog</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

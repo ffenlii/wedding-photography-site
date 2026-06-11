@@ -1,9 +1,23 @@
+@use "../../utils/variables" as *;
+
 .enquire-section {
   padding-bottom: 118px;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-bottom: 80px;
+  }
 
   &__title {
     color: var(--color-brand-dark);
     font-size: 64px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 40px;
+    }
   }
 
   &__subtitle {
@@ -11,6 +25,16 @@
     font-weight: 300;
     margin: 0 auto 125px;
     max-width: 690px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 34px;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
   }
 
   &__contant {
@@ -33,6 +57,21 @@
     align-items: center;
     gap: 68px;
     margin-right: 120px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-right: 64px;
+      gap: 40px;
+      background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.7)
+      );
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-right: 0;
+      gap: 30px;
+      padding: 34px 0;
+    }
   }
 
   &__icon {
@@ -40,10 +79,24 @@
     width: 85px;
     height: 85px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 70px;
+      height: 70px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__link {
     color: var(--color-grey-dark);
+
+    @media screen and (max-width: $bp-mobile) {
+      font-weight: 400;
+    }
   }
 
   &__item {
@@ -51,6 +104,10 @@
 
     &-title {
       margin-bottom: 12px;
+
+      @media screen and (max-width: $bp-mobile) {
+        font-weight: 400;
+      }
     }
   }
 }

@@ -1,16 +1,56 @@
+@use "../utils/variables" as *;
+
 .portfolio-card {
-  margin-bottom: 120px;
   padding-bottom: 20px;
   background-color: var(--color-white-f8);
+
+  @media screen and (max-width: $bp-mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__image {
     width: 370px;
     height: 420px;
     margin-bottom: 24px;
+
+    @media screen and (max-width: $bp-desktop) {
+      height: auto;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
   }
 
   &__title {
     font-size: 34px;
     margin-bottom: 16px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__subtitle {
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
   }
 }

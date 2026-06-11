@@ -1,8 +1,26 @@
+@use "../../utils/variables" as *;
+
 .faq-section {
   padding: 0 120px 70px;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding: 0 0 70px;
+  }
+
   &__subtitle {
     margin-bottom: 87px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 64px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 36px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 24px;
+    }
   }
 
   &__container {
@@ -20,6 +38,16 @@
   &__question {
     padding: 24px 40px;
     border-bottom: 1px solid var(--color-grey-c6);
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+      padding: 18px 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+      padding: 16px 6px;
+    }
   }
 
   &__decor {

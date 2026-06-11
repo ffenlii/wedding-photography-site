@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .checkerboard {
   &__container {
     display: flex;
@@ -7,15 +9,39 @@
 
   &__item {
     width: calc(100% / 3);
+
+    @media screen and (max-width: $bp-tablet) {
+      width: calc(100% / 2);
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+    }
   }
 
   &__image {
-    width: 360px;
+    max-width: 360px;
     height: 460px;
+    object-position: center top;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 24px;
+      height: auto;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
+
+    &--first {
+      @media screen and (max-width: $bp-tablet) {
+        display: none;
+      }
+    }
   }
 
   &__info {
-    padding: 0 40px;
+    padding: 0 20px;
     max-width: 360px;
     display: flex;
     flex-direction: column;
@@ -29,6 +55,10 @@
     width: 170px;
     margin-bottom: 14px;
 
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 90px;
+    }
+
     &--distance {
       padding-bottom: 24px;
     }
@@ -36,6 +66,13 @@
 
   &__text {
     font-weight: 300;
+    margin-bottom: 16px;
+
+    &--small {
+      @media screen and (max-width: $bp-desktop) {
+        font-size: 24px;
+      }
+    }
   }
 
   &__title {

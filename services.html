@@ -5,83 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav font-playfair">
+          <ul class="nav__container">
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
+            <li>
+              <a href="./services.html">
+                <img
+                  class="nav__logo"
+                  src="./images/logotype.svg"
+                  alt="Photograph's logo"
+              /></a>
+            </li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
+            <li>
+              <button class="nav__button">
+                <svg class="nav__button-icon">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="button__fixed modal-btn-open" type="button">
+        <svg class="button__fixed-icon">
+          <use href="./images/icons.svg#icon-dots-vertical"></use>
+        </svg>
+      </button>
+    </header>
     <main>
+      <section class="hero-general-section">
+        <h1 class="visually-hidden">Main section</h1>
+      </section>
       <section class="service-section">
         <div class="container">
           <h2 class="text-title">services</h2>
           <h3 class="service-section__subtitle section__subtitle">
             PHOTOGRAPHY PACKAGES
           </h3>
-          <div class="service-section__container">
-            <div class="service-section__item">
-              <img
-                class="service-section__image"
-                src="./images/service-section-wedding.jpg"
-                alt=""
-              />
-              <div class="service-section__info">
-                <p class="service-section__info-title font-ephesis">Wedding</p>
-                <div class="service-section__info-text">
-                  <p>500+ High-Quality Photos</p>
-                  <p>6 Hours HD Footage</p>
-                  <p>*Additional Photographer subject to charge</p>
-                  <p>*Videographer subject to charge</p>
-                </div>
-                <p class="service-section__info-session font-raleway">
-                  PER SESSION
-                </p>
-                <p class="service-section__info-price">$799</p>
-              </div>
-            </div>
-            <div class="service-section__item">
-              <img
-                class="service-section__image"
-                src="./images/service-section-portrait.jpg"
-                alt=""
-              />
-              <div class="service-section__info">
-                <p class="service-section__info-title font-ephesis">Portrait</p>
-                <div class="service-section__info-text">
-                  <p>Atleast 10 High Quality Photos</p>
-                  <p>Professionally Edited</p>
-                  <p>Hourly rates applied</p>
-                  <p>*Videographer subject to charge</p>
-                </div>
-                <p class="service-section__info-session font-raleway">
-                  PER SESSION
-                </p>
-                <p class="service-section__info-price">$399</p>
-              </div>
-            </div>
-            <div class="service-section__item">
-              <img
-                class="service-section__image"
-                src="./images/service-section-engagement.jpg"
-                alt=""
-              />
-              <div class="service-section__info">
-                <p class="service-section__info-title font-ephesis">
-                  Engagement
-                </p>
-                <div class="service-section__info-text">
-                  <p>200 High-Quality Photos</p>
-                  <p>3 Hours HD Footage</p>
-                  <p>*Additional Photographer subject to charge</p>
-                  <p>*Videographer subject to charge</p>
-                </div>
+          <div class="service-section__slider swiper-container">
+            <ul class="service-section__list swiper-wrapper">
+              <li class="swiper-slide">
+                <article
+                  class="service-section__item"
+                  id="services-section-wedding"
+                >
+                  <img
+                    class="service-section__image section__image"
+                    src="./images/service-section-wedding.jpg"
+                    alt=""
+                  />
+                  <div class="service-section__info">
+                    <p class="service-section__info-title font-ephesis">
+                      Wedding
+                    </p>
+                    <div class="service-section__info-text">
+                      <p>500+ High-Quality Photos</p>
+                      <p>6 Hours HD Footage</p>
+                      <p>*Additional Photographer subject to charge</p>
+                      <p>*Videographer subject to charge</p>
+                    </div>
+                    <p class="service-section__info-session font-raleway">
+                      PER SESSION
+                    </p>
+                    <p class="service-section__info-price">$799</p>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article
+                  class="service-section__item"
+                  id="services-section-portrait"
+                >
+                  <img
+                    class="service-section__image section__image"
+                    src="./images/service-section-portrait.jpg"
+                    alt=""
+                  />
+                  <div class="service-section__info">
+                    <p class="service-section__info-title font-ephesis">
+                      Portrait
+                    </p>
+                    <div class="service-section__info-text">
+                      <p>Atleast 10 High Quality Photos</p>
+                      <p>Professionally Edited</p>
+                      <p>Hourly rates applied</p>
+                      <p>*Videographer subject to charge</p>
+                    </div>
+                    <p class="service-section__info-session font-raleway">
+                      PER SESSION
+                    </p>
+                    <p class="service-section__info-price">$399</p>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article
+                  class="service-section__item"
+                  id="services-section-engagement"
+                >
+                  <img
+                    class="service-section__image section__image"
+                    src="./images/service-section-engagement.jpg"
+                    alt=""
+                  />
+                  <div class="service-section__info">
+                    <p class="service-section__info-title font-ephesis">
+                      Engagement
+                    </p>
+                    <div class="service-section__info-text">
+                      <p>200 High-Quality Photos</p>
+                      <p>3 Hours HD Footage</p>
+                      <p>*Additional Photographer subject to charge</p>
+                      <p>*Videographer subject to charge</p>
+                    </div>
 
-                <p class="service-section__info-session font-raleway">
-                  PER SESSION
-                </p>
-                <p class="service-section__info-price">$799</p>
-              </div>
+                    <p class="service-section__info-session font-raleway">
+                      PER SESSION
+                    </p>
+                    <p class="service-section__info-price">$799</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="pagination">
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
+              <span class="pagination__button"></span>
             </div>
           </div>
-          <button class="button__touch button" type="button">
-            GET IN TOUCH
-          </button>
+
+          <a href="./contact.html#contact-section">
+            <button class="button__touch button" type="button">
+              GET IN TOUCH
+            </button>
+          </a>
         </div>
       </section>
       <section class="celebrate-section">
@@ -104,7 +175,7 @@
           </h3>
           <div class="checkerboard__container">
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image checkerboard__image--first section__image"
               src="./images/facts-section-fiancee.jpg"
               alt=""
             />
@@ -118,7 +189,7 @@
               </p>
             </div>
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image section__image"
               src="./images/process-section-table-with-flowers.jpg"
               alt=""
             />
@@ -132,7 +203,7 @@
               </p>
             </div>
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image section__image"
               src="./images/process-fiancee-with-flowers.jpg"
               alt=""
             />
@@ -150,7 +221,7 @@
               </p>
             </div>
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image section__image"
               src="./images/process-ceremonial-arch.jpg"
               alt=""
             />
@@ -168,7 +239,7 @@
               </p>
             </div>
             <img
-              class="checkerboard__item checkerboard__image"
+              class="checkerboard__item checkerboard__image section__image"
               src="./images/facts-section-couple.jpg"
               alt=""
             />
@@ -225,32 +296,120 @@
       </section>
       <section class="quality-section">
         <div class="container">
-          <img
-            class="quality-section__image quality-section__image-one"
-            src="./images/quality-section-glasses.jpg"
-            alt=""
-          />
-          <div class="prob">
-            <div class="quality-section__container">
-              <h2 class="quality-section__title font-ephesis">
-                Quality Service
-              </h2>
-              <p class="quality-section__info">
-                On your big day, you can count on me to turn fleeting moments
-                into timeless treasures you will cherish for generations.
-              </p>
-              <button class="button__quality-section button" type="button">
-                Enquire Now
-              </button>
+          <div class="quality-section__contant">
+            <img
+              class="section__image quality-section__image quality-section__image-one"
+              src="./images/quality-section-glasses.jpg"
+              alt=""
+            />
+            <div class="quality-section__item">
+              <div class="quality-section__container">
+                <h2 class="quality-section__title font-ephesis">
+                  Quality Service
+                </h2>
+                <p class="quality-section__info">
+                  On your big day, you can count on me to turn fleeting moments
+                  into timeless treasures you will cherish for generations.
+                </p>
+
+                <a href="./contact.html#contact-section">
+                  <button class="button__quality-section button" type="button">
+                    Enquire Now
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
           <img
-            class="quality-section__image quality-section__image-two"
+            class="section__image quality-section__image quality-section__image-two"
             src="./images/quality-section-rings.jpg"
             alt=""
           />
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav font-playfair">
+          <ul class="nav__container">
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
+            <li>
+              <a href="./index.html">
+                <img
+                  class="nav__logo"
+                  src="./images/logotype.svg"
+                  alt="Photograph's logo"
+              /></a>
+            </li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <p class="footer__info">
+          Lorem ipsum dolor sit amet consectetur. Morbi volut tempus posuere
+          viverra massa fames sed. Dignissim urisus et ac egestas dignissim.
+        </p>
+        <div class="footer__socials">
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-twiter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-you-tube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copyright">Copyright 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <div class="modal is-hidden">
+      <div class="modal__window">
+        <button class="modal__button modal-btn-close" type="button">
+          <svg class="modal__button-icon">
+            <use href="./images/icons.svg#icon-cancel"></use>
+          </svg>
+        </button>
+        <ul class="modal__nav">
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./index.html">home</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./about.html">about</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./services.html">services</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./portfolio.html">portfolio</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./blog.html">blog</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/service-slider.js"></script>
   </body>
 </html>

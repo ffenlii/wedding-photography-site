@@ -1,7 +1,29 @@
+@use "../../utils/variables" as *;
+
 .process-section {
   padding: 136px 0;
 
+  @media screen and (max-width: $bp-desktop) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 90px 0;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 54px 0;
+  }
+
   &__subtitle {
     margin-bottom: 90px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 8px;
+    }
   }
 }

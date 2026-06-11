@@ -1,3 +1,5 @@
+@use "../../utils/variables" as *;
+
 .memories-section {
   padding: 75px 0 160px;
   text-align: start;
@@ -5,10 +7,26 @@
 
   &__subtitle {
     margin-bottom: 8px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 30px;
+    }
   }
 
-  &__background {
+  &__container {
     background-color: var(--color-white-f8);
+
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 30px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column-reverse;
+      gap: 0;
+    }
   }
 
   &__text {
@@ -16,17 +34,41 @@
     padding: 23px 0 46px;
     max-width: 530px;
     margin-bottom: 46px;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding: 23px 0;
+      margin-bottom: 0;
+    }
   }
 
-  &__image-one {
-    position: absolute;
-    top: 30px;
-    right: 400px;
-  }
+  &__image {
+    &-one {
+      position: absolute;
+      top: 30px;
+      right: 400px;
 
-  &__image-two {
-    position: absolute;
-    top: 200px;
-    right: 110px;
+      @media screen and (max-width: $bp-desktop) {
+        position: static;
+        flex-shrink: 0;
+      }
+
+      @media screen and (max-width: $bp-tablet) {
+        flex-shrink: 0.5;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        width: 60%;
+      }
+    }
+
+    &-two {
+      position: absolute;
+      top: 200px;
+      right: 110px;
+
+      @media screen and (max-width: $bp-desktop) {
+        display: none;
+      }
+    }
   }
 }

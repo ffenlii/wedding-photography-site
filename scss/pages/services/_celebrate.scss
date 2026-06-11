@@ -1,16 +1,44 @@
+@use "../../utils/variables" as *;
+
 .celebrate-section {
   background-color: var(--color-white-f8);
   padding: 35px 0 115px;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 35px 0 90px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 25px 0 60px;
+  }
 
   &__decor {
     width: 98px;
     height: 146px;
     fill: var(--color-brand-dark);
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 76px;
+      height: 104px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 60px;
+      height: 72px;
+    }
   }
 
   &__subtitle {
     max-width: 1170px;
     margin: 0 auto;
     font-weight: 400;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 34px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 28px;
+    }
   }
 }

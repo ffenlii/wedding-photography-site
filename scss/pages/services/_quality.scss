@@ -1,17 +1,49 @@
+@use "../../utils/variables" as *;
+
 .quality-section {
   text-align: start;
   position: relative;
   padding: 70px 0 500px;
 
+  @media screen and (max-width: $bp-tablet) {
+    padding: 30px 0 110px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0 0 70px;
+  }
+
   &__title {
     font-size: 64px;
     margin-bottom: 16px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 42px;
+    }
   }
 
-  .prob {
+  &__item {
     display: flex;
     justify-content: flex-end;
     margin-right: 120px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-right: 60px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-right: 0;
+      gap: 20px;
+    }
+  }
+
+  &__contant {
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
 
   &__container {
@@ -24,6 +56,15 @@
     font-weight: 300;
     margin-bottom: 28px;
     max-width: 606px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
   }
 
   &__image {
@@ -31,12 +72,32 @@
 
     &-one {
       top: 50px;
-      left: 320px;
+      left: 180px;
+
+      @media screen and (max-width: $bp-desktop) {
+        position: static;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        display: none;
+      }
     }
 
     &-two {
       right: 170px;
       bottom: 200px;
+
+      @media screen and (max-width: $bp-desktop) {
+        display: none;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        display: block;
+        position: static;
+        padding: 8px 0;
+        width: 80%;
+        align-content: center;
+      }
     }
   }
 }

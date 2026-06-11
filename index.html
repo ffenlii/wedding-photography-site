@@ -13,26 +13,26 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--home">
       <div class="container">
         <nav class="nav font-playfair">
           <ul class="nav__container">
-            <li><a class="nav__link" href="#">home</a></li>
-            <li><a class="nav__link" href="#">about</a></li>
-            <li><a class="nav__link" href="#">services</a></li>
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
             <li>
-              <a href="#">
+              <a href="./index.html">
                 <img
                   class="nav__logo"
                   src="./images/logotype.svg"
                   alt="Photograph's logo"
               /></a>
             </li>
-            <li><a class="nav__link" href="#">portfolio</a></li>
-            <li><a class="nav__link" href="#">blog</a></li>
-            <li><a class="nav__link" href="#">contact</a></li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
             <li>
-              <button class="nav__button">
+              <button class="nav__button modal-btn-open">
                 <svg class="nav__button-icon">
                   <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
@@ -41,6 +41,11 @@
           </ul>
         </nav>
       </div>
+      <button class="button__fixed modal-btn-open" type="button">
+        <svg class="button__fixed-icon">
+          <use href="./images/icons.svg#icon-dots-vertical"></use>
+        </svg>
+      </button>
     </header>
     <main>
       <section class="hero-section">
@@ -93,7 +98,9 @@
                 <use href="./images/icons.svg#icon-photograph-underline"></use>
               </svg>
               <p class="photograph-section__sign font-ephesis">Tessa.M</p>
-              <button class="button" type="button">Learn More</button>
+              <a href="./about.html#about-section">
+                <button class="button" type="button">Learn More</button>
+              </a>
             </div>
           </div>
         </div>
@@ -116,9 +123,11 @@
                   <h3 class="service-card__title font-ephesis">Wedding</h3>
                   <p class="service-card__info">Per Session</p>
                   <p class="service-card__price">$2999</p>
-                  <button class="button__service-card button" type="button">
-                    More Details
-                  </button>
+                  <a href="./services.html#services-section-wedding">
+                    <button class="button__service-card button" type="button">
+                      More Details
+                    </button>
+                  </a>
                 </article>
               </li>
               <li class="swiper-slide">
@@ -131,9 +140,11 @@
                   <h3 class="service-card__title font-ephesis">Portrait</h3>
                   <p class="service-card__info">Per Session</p>
                   <p class="service-card__price">$399</p>
-                  <button class="button__service-card button" type="button">
-                    More Details
-                  </button>
+                  <a href="./services.html#services-section-portrait">
+                    <button class="button__service-card button" type="button">
+                      More Details
+                    </button>
+                  </a>
                 </article>
               </li>
               <li class="swiper-slide">
@@ -146,9 +157,11 @@
                   <h3 class="service-card__title font-ephesis">Engagement</h3>
                   <p class="service-card__info">Per Session</p>
                   <p class="service-card__price">$1999</p>
-                  <button class="button__service-card button" type="button">
-                    More Details
-                  </button>
+                  <a href="./services.html#services-section-engagement">
+                    <button class="button__service-card button" type="button">
+                      More Details
+                    </button>
+                  </a>
                 </article>
               </li>
             </ul>
@@ -212,9 +225,11 @@
               />
             </div>
           </div>
-          <button class="button__portfolio-section button" type="button">
-            View Gallery
-          </button>
+          <a href="./portfolio.html#portfolio-section">
+            <button class="button__portfolio-section button" type="button">
+              View Gallery
+            </button>
+          </a>
         </div>
       </section>
       <section class="testinomials-section">
@@ -346,20 +361,20 @@
       <div class="container">
         <nav class="nav font-playfair">
           <ul class="nav__container">
-            <li><a class="nav__link" href="#">home</a></li>
-            <li><a class="nav__link" href="#">about</a></li>
-            <li><a class="nav__link" href="#">services</a></li>
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
             <li>
-              <a href="#">
+              <a href="./index.html">
                 <img
                   class="nav__logo"
                   src="./images/logotype.svg"
                   alt="Photograph's logo"
               /></a>
             </li>
-            <li><a class="nav__link" href="#">portfolio</a></li>
-            <li><a class="nav__link" href="#">blog</a></li>
-            <li><a class="nav__link" href="#">contact</a></li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
           </ul>
         </nav>
         <p class="footer__info">
@@ -392,8 +407,38 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div class="modal is-hidden">
+      <div class="modal__window">
+        <button class="modal__button modal-btn-close" type="button">
+          <svg class="modal__button-icon">
+            <use href="./images/icons.svg#icon-cancel"></use>
+          </svg>
+        </button>
+        <ul class="modal__nav">
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./index.html">home</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./about.html">about</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./services.html">services</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./portfolio.html">portfolio</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./blog.html">blog</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/slider.js"></script>
   </body>
 </html>

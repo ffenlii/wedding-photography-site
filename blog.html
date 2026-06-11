@@ -6,9 +6,51 @@
     <title>blog</title>
 
     <link rel="stylesheet" href="../css/main.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav font-playfair">
+          <ul class="nav__container">
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
+            <li>
+              <a href="./contact.html">
+                <img
+                  class="nav__logo"
+                  src="./images/logotype.svg"
+                  alt="Photograph's logo"
+              /></a>
+            </li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
+            <li>
+              <button class="nav__button">
+                <svg class="nav__button-icon">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="button__fixed modal-btn-open" type="button">
+        <svg class="button__fixed-icon">
+          <use href="./images/icons.svg#icon-dots-vertical"></use>
+        </svg>
+      </button>
+    </header>
     <main>
+      <section class="hero-general-section">
+        <h1 class="visually-hidden">Main section</h1>
+      </section>
       <section class="blog-section">
         <div class="container">
           <h2 class="text-title">BLOG</h2>
@@ -20,172 +62,258 @@
             tristique cras urna. Amet pellentesque erat dui lacus ultricies nec
             sit.
           </p>
-          <ul class="blog-section__list">
-            <li>
-              <article class="blog-card">
-                <img
-                  class="blog-card__image"
-                  src="../images/blog-card-boxes.jpg"
-                  alt=""
-                />
-                <h4 class="blog-card__title">
-                  Gift ideas for the bride & groom on the wedding day
-                </h4>
-                <p class="blog-card__text">
-                  Date:
-                  <span class="blog-card__accent font-dancing"
-                    >28 July 2023</span
-                  >
-                </p>
-                <p class="blog-card__text--distance">
-                  Category:
-                  <span class="blog-card__accent font-dancing">Wedding </span>
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
-                  tincidunt consequat nec potenti. Justo molestie amet
-                  vulputate.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article class="blog-card">
-                <img
-                  class="blog-card__image"
-                  src="../images/blog-card-flowers.jpg"
-                  alt=""
-                />
-                <h4 class="blog-card__title">
-                  Gift ideas for the bride & groom on the wedding day
-                </h4>
-                <p class="blog-card__text">
-                  Date:
-                  <span class="blog-card__accent font-dancing"
-                    >28 July 2023</span
-                  >
-                </p>
-                <p class="blog-card__text--distance">
-                  Category:
-                  <span class="blog-card__accent font-dancing">Wedding </span>
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
-                  tincidunt consequat nec potenti. Justo molestie amet
-                  vulputate.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article class="blog-card">
-                <img
-                  class="blog-card__image"
-                  src="../images/blog-card-peoples.jpg"
-                  alt=""
-                />
-                <h4 class="blog-card__title">
-                  Gift ideas for the bride & groom on the wedding day
-                </h4>
-                <p class="blog-card__text">
-                  Date:
-                  <span class="blog-card__accent font-dancing"
-                    >28 July 2023</span
-                  >
-                </p>
-                <p class="blog-card__text--distance">
-                  Category:
-                  <span class="blog-card__accent font-dancing">Wedding </span>
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
-                  tincidunt consequat nec potenti. Justo molestie amet
-                  vulputate.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article class="blog-card">
-                <img
-                  class="blog-card__image"
-                  src="../images/blog-card-gives.jpg"
-                  alt=""
-                />
-                <h4 class="blog-card__title">
-                  Gift ideas for the bride & groom on the wedding day
-                </h4>
-                <p class="blog-card__text">
-                  Date:
-                  <span class="blog-card__accent font-dancing"
-                    >28 July 2023</span
-                  >
-                </p>
-                <p class="blog-card__text--distance">
-                  Category:
-                  <span class="blog-card__accent font-dancing">Wedding </span>
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
-                  tincidunt consequat nec potenti. Justo molestie amet
-                  vulputate.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article class="blog-card">
-                <img
-                  class="blog-card__image"
-                  src="../images/blog-card-boxes.jpg"
-                  alt=""
-                />
-                <h4 class="blog-card__title">
-                  Gift ideas for the bride & groom on the wedding day
-                </h4>
-                <p class="blog-card__text">
-                  Date:
-                  <span class="blog-card__accent font-dancing"
-                    >28 July 2023</span
-                  >
-                </p>
-                <p class="blog-card__text--distance">
-                  Category:
-                  <span class="blog-card__accent font-dancing">Wedding </span>
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
-                  tincidunt consequat nec potenti. Justo molestie amet
-                  vulputate.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article class="blog-card">
-                <img
-                  class="blog-card__image"
-                  src="../images/blog-card-decor.jpg"
-                  alt=""
-                />
-                <h4 class="blog-card__title">
-                  Gift ideas for the bride & groom on the wedding day
-                </h4>
-                <p class="blog-card__text">
-                  Date:
-                  <span class="blog-card__accent font-dancing"
-                    >28 July 2023</span
-                  >
-                </p>
-                <p class="blog-card__text--distance">
-                  Category:
-                  <span class="blog-card__accent font-dancing">Wedding </span>
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
-                  tincidunt consequat nec potenti. Justo molestie amet
-                  vulputate.
-                </p>
-              </article>
-            </li>
-          </ul>
+          <div class="blog-section__slider swiper-container">
+            <ul class="blog-section__list swiper-wrapper">
+              <li class="blog-card swiper-slide">
+                <article class="">
+                  <img
+                    class="blog-card__image section__image"
+                    src="../images/blog-card-boxes.jpg"
+                    alt=""
+                  />
+                  <h4 class="blog-card__title">
+                    Gift ideas for the bride & groom on the wedding day
+                  </h4>
+                  <p class="blog-card__text">
+                    Date:
+                    <span class="blog-card__accent font-dancing"
+                      >28 July 2023</span
+                    >
+                  </p>
+                  <p class="blog-card__text--distance">
+                    Category:
+                    <span class="blog-card__accent font-dancing">Wedding </span>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
+                    tincidunt consequat nec potenti. Justo molestie amet
+                    vulputate.
+                  </p>
+                </article>
+              </li>
+              <li class="blog-card swiper-slide">
+                <article class="">
+                  <img
+                    class="blog-card__image section__image"
+                    src="../images/blog-card-flowers.jpg"
+                    alt=""
+                  />
+                  <h4 class="blog-card__title">
+                    Gift ideas for the bride & groom on the wedding day
+                  </h4>
+                  <p class="blog-card__text">
+                    Date:
+                    <span class="blog-card__accent font-dancing"
+                      >28 July 2023</span
+                    >
+                  </p>
+                  <p class="blog-card__text--distance">
+                    Category:
+                    <span class="blog-card__accent font-dancing">Wedding </span>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
+                    tincidunt consequat nec potenti. Justo molestie amet
+                    vulputate.
+                  </p>
+                </article>
+              </li>
+              <li class="blog-card swiper-slide">
+                <article class="">
+                  <img
+                    class="blog-card__image section__image"
+                    src="../images/blog-card-peoples.jpg"
+                    alt=""
+                  />
+                  <h4 class="blog-card__title">
+                    Gift ideas for the bride & groom on the wedding day
+                  </h4>
+                  <p class="blog-card__text">
+                    Date:
+                    <span class="blog-card__accent font-dancing"
+                      >28 July 2023</span
+                    >
+                  </p>
+                  <p class="blog-card__text--distance">
+                    Category:
+                    <span class="blog-card__accent font-dancing">Wedding </span>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
+                    tincidunt consequat nec potenti. Justo molestie amet
+                    vulputate.
+                  </p>
+                </article>
+              </li>
+              <li class="blog-card swiper-slide">
+                <article class="">
+                  <img
+                    class="blog-card__image section__image"
+                    src="../images/blog-card-gives.jpg"
+                    alt=""
+                  />
+                  <h4 class="blog-card__title">
+                    Gift ideas for the bride & groom on the wedding day
+                  </h4>
+                  <p class="blog-card__text">
+                    Date:
+                    <span class="blog-card__accent font-dancing"
+                      >28 July 2023</span
+                    >
+                  </p>
+                  <p class="blog-card__text--distance">
+                    Category:
+                    <span class="blog-card__accent font-dancing">Wedding </span>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
+                    tincidunt consequat nec potenti. Justo molestie amet
+                    vulputate.
+                  </p>
+                </article>
+              </li>
+              <li class="blog-card swiper-slide">
+                <article class="">
+                  <img
+                    class="blog-card__image section__image"
+                    src="../images/blog-card-boxes.jpg"
+                    alt=""
+                  />
+                  <h4 class="blog-card__title">
+                    Gift ideas for the bride & groom on the wedding day
+                  </h4>
+                  <p class="blog-card__text">
+                    Date:
+                    <span class="blog-card__accent font-dancing"
+                      >28 July 2023</span
+                    >
+                  </p>
+                  <p class="blog-card__text--distance">
+                    Category:
+                    <span class="blog-card__accent font-dancing">Wedding </span>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
+                    tincidunt consequat nec potenti. Justo molestie amet
+                    vulputate.
+                  </p>
+                </article>
+              </li>
+              <li class="blog-card swiper-slide">
+                <article class="">
+                  <img
+                    class="blog-card__image section__image"
+                    src="../images/blog-card-decor.jpg"
+                    alt=""
+                  />
+                  <h4 class="blog-card__title">
+                    Gift ideas for the bride & groom on the wedding day
+                  </h4>
+                  <p class="blog-card__text">
+                    Date:
+                    <span class="blog-card__accent font-dancing"
+                      >28 July 2023</span
+                    >
+                  </p>
+                  <p class="blog-card__text--distance">
+                    Category:
+                    <span class="blog-card__accent font-dancing">Wedding </span>
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet as a consectetur. Rutrum ins
+                    tincidunt consequat nec potenti. Justo molestie amet
+                    vulputate.
+                  </p>
+                </article>
+              </li>
+            </ul>
+            <div class="pagination"></div>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav font-playfair">
+          <ul class="nav__container">
+            <li><a class="nav__link" href="./index.html">home</a></li>
+            <li><a class="nav__link" href="./about.html">about</a></li>
+            <li><a class="nav__link" href="./services.html">services</a></li>
+            <li>
+              <a href="./index.html">
+                <img
+                  class="nav__logo"
+                  src="./images/logotype.svg"
+                  alt="Photograph's logo"
+              /></a>
+            </li>
+            <li><a class="nav__link" href="./portfolio.html">portfolio</a></li>
+            <li><a class="nav__link" href="./blog.html">blog</a></li>
+            <li><a class="nav__link" href="./contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <p class="footer__info">
+          Lorem ipsum dolor sit amet consectetur. Morbi volut tempus posuere
+          viverra massa fames sed. Dignissim urisus et ac egestas dignissim.
+        </p>
+        <div class="footer__socials">
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-twiter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-you-tube"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer__icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copyright">Copyright 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <div class="modal is-hidden">
+      <div class="modal__window">
+        <button class="modal__button modal-btn-close" type="button">
+          <svg class="modal__button-icon">
+            <use href="./images/icons.svg#icon-cancel"></use>
+          </svg>
+        </button>
+        <ul class="modal__nav">
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./index.html">home</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./about.html">about</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./services.html">services</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./portfolio.html">portfolio</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./blog.html">blog</a>
+          </li>
+          <li class="modal__nav-item">
+            <a class="modal__nav-link" href="./contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/blog-slider.js"></script>
   </body>
 </html>

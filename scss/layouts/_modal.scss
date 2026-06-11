@@ -1,0 +1,86 @@
+@use "../utils/variables" as *;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    rgba(54, 54, 54, 0.9),
+    rgba(54, 54, 54, 0.9)
+  );
+  /* Щоб модальне вікно всередині не прилипало до країв екрану вгорі та внизу */
+  padding: 20px;
+  z-index: 3;
+  display: flex;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+
+  &.is-hidden {
+    /* Щоб заховати модальне вікно */
+    opacity: 0;
+    /* Чи буде елемент видимий для браузера */
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &__window {
+    background-color: var(--color-white-f8);
+    width: 80%;
+    border-radius: 16px;
+    position: relative;
+    padding: 60px 0 20px;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+
+    &-item {
+      margin-bottom: 16px;
+    }
+
+    &-link {
+      color: var(--color-grey-light);
+      font-size: 48px;
+
+      &:active {
+        color: var(--color-brand-dark);
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+
+    &-icon {
+      width: 40px;
+      height: 40px;
+      fill: var(--color-brand-dark);
+
+      @media screen and (max-width: $bp-mobile) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}

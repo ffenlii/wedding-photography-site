@@ -66,10 +66,31 @@
 
   &__about-section {
     padding: 16px 24px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 10px 14px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
   }
 
   &__quality-section {
     padding: 26px 68px;
+
+    @media screen and (max-width: $bp-desktop) {
+      padding: 20px 48px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
   }
 
   &__touch {
@@ -78,9 +99,49 @@
     font-weight: 500;
     font-size: 28px;
     background-color: transparent;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 14px 20px;
+      font-size: 18px;
+    }
   }
 
   &__contact {
     padding: 16px 50px;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding: 10px 26px;
+    }
+  }
+
+  &__fixed {
+    display: none;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: flex;
+      position: fixed;
+      background-color: var(--color-white-f8);
+      border: 3px solid var(--color-brand-normal);
+      border-radius: 50%;
+      padding: 12px;
+      right: 20px;
+      bottom: 20px;
+      z-index: 5;
+
+      @media screen and (max-width: $bp-mobile) {
+        padding: 8px;
+      }
+    }
+
+    &-icon {
+      fill: var(--color-brand-dark);
+      width: 36px;
+      height: 36px;
+
+      @media screen and (max-width: $bp-mobile) {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }

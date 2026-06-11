@@ -1,5 +1,15 @@
+@use "../../utils/variables" as *;
+
 .eror-section {
   padding: 100px 0 170px;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 80px 0 130px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 60px 0 110px;
+  }
 
   &__title {
     margin-bottom: 36px;
@@ -10,5 +20,15 @@
     font-weight: 300;
     margin: 0 auto 72px;
     max-width: 860px;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 34px;
+      margin-bottom: 34px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
   }
 }

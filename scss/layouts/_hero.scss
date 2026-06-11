@@ -1,0 +1,18 @@
+@use "../utils/variables" as *;
+
+.hero-general-section {
+  background-image: url("../../images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  height: 420px;
+
+  @media screen and (max-width: $bp-tablet) {
+    height: 270px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    height: 150px;
+  }
+}
