@@ -109,8 +109,9 @@
   &__contact {
     padding: 16px 50px;
 
-    @media screen and (max-width: $bp-mobile) {
-      padding: 10px 26px;
+    @media screen and (max-width: $bp-tablet) {
+      padding: 10px 30px;
+      font-size: 18px;
     }
   }
 
@@ -126,7 +127,7 @@
       padding: 12px;
       right: 20px;
       bottom: 20px;
-      z-index: 5;
+      z-index: 3;
 
       @media screen and (max-width: $bp-mobile) {
         padding: 8px;

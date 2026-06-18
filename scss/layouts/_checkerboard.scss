@@ -57,6 +57,7 @@
 
     @media screen and (max-width: $bp-mobile) {
       font-size: 90px;
+      width: 80px;
     }
 
     &--distance {
@@ -67,10 +68,19 @@
   &__text {
     font-weight: 300;
     margin-bottom: 16px;
+    font-size: 24px;
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 18px;
+    }
 
     &--small {
       @media screen and (max-width: $bp-desktop) {
         font-size: 24px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 18px;
       }
     }
   }

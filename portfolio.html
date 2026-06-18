@@ -32,7 +32,7 @@
             <li><a class="nav__link" href="./blog.html">blog</a></li>
             <li><a class="nav__link" href="./contact.html">contact</a></li>
             <li>
-              <button class="nav__button">
+              <button class="nav__button modal-btn-open" type="button">
                 <svg class="nav__button-icon">
                   <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
@@ -58,7 +58,7 @@
             HIGHLIGHTED WORKS
           </p>
           <div class="portfolio-slider-wrap">
-            <div class="portfolio-page-section__slider swiper">
+            <div class="portfolio-page-section__slider swiper-container">
               <ul class="portfolio-page-section__list swiper-wrapper">
                 <li class="swiper-slide">
                   <article class="portfolio-card">
@@ -100,16 +100,13 @@
                   </article>
                 </li>
               </ul>
-              <div class="pagination pagination__portfolio">
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-              </div>
+
+              <div class="pagination pagination__portfolio"></div>
             </div>
           </div>
 
           <div class="portfolio-slider-wrap">
-            <div class="portfolio-page-section__slider swiper">
+            <div class="portfolio-page-section__slider swiper-container">
               <ul class="portfolio-page-section__list swiper-wrapper">
                 <li class="swiper-slide">
                   <article class="portfolio-card">
@@ -157,16 +154,11 @@
                   </article>
                 </li>
               </ul>
-              <div class="pagination pagination__portfolio">
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-              </div>
+              <div class="pagination pagination__portfolio"></div>
             </div>
           </div>
-
           <div class="portfolio-slider-wrap">
-            <div class="portfolio-page-section__slider swiper">
+            <div class="portfolio-page-section__slider swiper-container">
               <ul class="portfolio-page-section__list swiper-wrapper">
                 <li class="swiper-slide">
                   <article class="portfolio-card">
@@ -202,11 +194,7 @@
                   </article>
                 </li>
               </ul>
-              <div class="pagination pagination__portfolio">
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-                <span class="pagination__button"></span>
-              </div>
+              <div class="pagination pagination__portfolio"></div>
             </div>
           </div>
 
@@ -230,7 +218,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="perfect-section">
+      <section class="perfect-section">
         <div class="container">
           <div class="perfect-section__container">
             <div class="perfect-section__info">
@@ -239,20 +227,23 @@
                 Stay Beautfiul
               </p>
               <p class="perfect-section__text">
-                Lorem ipsum dolor sit amet consectetur. Ac in bibendum pharetra
-                justo nullam est placerat. Eget tortor lacus porta pellentesque
-                duis velit habitant nisl dignissim.
+                Your wedding day is a collection of fleeting, beautiful moments
+                that deserve to be preserved perfectly. If you are ready to
+                capture your genuine love and create memories that last forever,
+                let’s start planning your custom session today.
               </p>
-              <button class="button" type="button">Enquire Now</button>
+              <a href="./contact.html#contact-section">
+                <button class="button" type="button">Enquire Now</button>
+              </a>
             </div>
             <img
-              class="perfect-section__image"
+              class="perfect-section__image section__image"
               src="./images/facts-section-ceremony.jpg"
               alt=""
             />
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer class="footer">
@@ -276,8 +267,8 @@
           </ul>
         </nav>
         <p class="footer__info">
-          Lorem ipsum dolor sit amet consectetur. Morbi volut tempus posuere
-          viverra massa fames sed. Dignissim urisus et ac egestas dignissim.
+          Capturing love stories worldwide with an artistic, timeless, and
+          elegant touch. Let's create something unforgettable together.
         </p>
         <div class="footer__socials">
           <a href="#">

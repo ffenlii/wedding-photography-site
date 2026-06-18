@@ -3,9 +3,21 @@
 .service-section {
   padding: 140px 0 125px;
 
+  @media screen and (max-width: $bp-tablet) {
+    padding: 70px 0;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 40px 0 60px;
+  }
+
   &__subtitle {
     text-transform: uppercase;
     margin-bottom: 78px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -23,15 +35,39 @@
 
   &__image {
     margin-bottom: 48px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 10px;
+    }
   }
 
   &__info {
     padding: 0 32px;
     max-width: 410px;
 
+    @media screen and (max-width: $bp-desktop) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      padding: 0 24px;
+    }
+
     &-title {
       font-size: 64px;
       margin-bottom: 12px;
+
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 48px;
+      }
     }
 
     &-text {
@@ -41,6 +77,14 @@
       height: 270px;
       align-items: flex-start;
       max-width: 286px;
+
+      @media screen and (max-width: $bp-tablet) {
+        height: 230px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        height: 200px;
+      }
     }
 
     &-session {
@@ -50,6 +94,19 @@
 
     &-price {
       font-size: 64px;
+
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 52px;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 48px;
+      }
     }
+  }
+
+  &__slider {
+    overflow: hidden;
+    width: 100%;
   }
 }

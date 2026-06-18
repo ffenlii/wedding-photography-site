@@ -5,6 +5,14 @@
   text-align: start;
   position: relative;
 
+  @media screen and (max-width: $bp-tablet) {
+    padding: 20px 0 90px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0 0 60px;
+  }
+
   &__subtitle {
     margin-bottom: 8px;
 

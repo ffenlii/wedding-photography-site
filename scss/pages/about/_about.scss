@@ -3,6 +3,14 @@
 .about-section {
   padding: 188px 0 95px;
 
+  @media screen and (max-width: $bp-tablet) {
+    padding: 90px 0 95px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 40px 0 54px;
+  }
+
   &__subtitle {
     margin-bottom: 92px;
     text-transform: uppercase;

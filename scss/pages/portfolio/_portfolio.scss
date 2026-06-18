@@ -24,7 +24,7 @@
 
     @media screen and (max-width: $bp-tablet) {
       font-size: 38px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     @media screen and (max-width: $bp-mobile) {
@@ -35,16 +35,16 @@
 
   &__list {
     margin-bottom: 114px;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    // display: flex;
+    // gap: 20px;
+    // justify-content: space-between;
 
     @media screen and (max-width: $bp-desktop) {
       margin-bottom: 90px;
     }
 
     @media screen and (max-width: $bp-tablet) {
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
 
     @media screen and (max-width: $bp-mobile) {
@@ -54,8 +54,11 @@
   }
 }
 
-@media (min-width: 480px) {
-  .portfolio-slider-wrap .portfolio-pagination {
-    display: none;
-  }
+// @media (min-width: 480px) {
+//   .portfolio-slider-wrap .portfolio-pagination {
+//     display: none;
+//   }
+// }
+.portfolio-page-section__slider {
+  overflow: hidden;
 }

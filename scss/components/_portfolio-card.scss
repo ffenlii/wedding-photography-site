@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 
 .portfolio-card {
+  width: 100%;
   padding-bottom: 20px;
   background-color: var(--color-white-f8);
 
@@ -11,8 +12,11 @@
   }
 
   &__image {
-    width: 370px;
-    height: 420px;
+    width: 100%;
+    // max-width: 370px;
+    height: auto;
+    // width: 370px;
+    // height: 420px;
     margin-bottom: 24px;
 
     @media screen and (max-width: $bp-desktop) {

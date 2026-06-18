@@ -1,6 +1,12 @@
+@use "../../utils/variables" as *;
+
 .perfect-section {
   padding: 280px 0 350px;
   text-align: start;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 80px 0;
+  }
 
   &__container {
     display: flex;
@@ -9,17 +15,35 @@
     background-color: var(--color-white-f8);
     position: relative;
     padding-left: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      padding-left: 0;
+      gap: 20px;
+    }
   }
 
   &__info {
     padding: 26px 0 82px;
     max-width: 510px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding-bottom: 20px;
+    }
   }
 
   &__subtitle {
     font-size: 64px;
     margin-bottom: 16px;
     color: var(--color-grey-light);
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 44px;
+    }
   }
 
   &__text {
@@ -28,10 +52,20 @@
   }
 
   &__image {
-    width: 670px;
-    height: 720px;
+    width: 520px;
+    height: auto;
     position: absolute;
     right: 120px;
     top: -100px;
+
+    @media screen and (max-width: $bp-desktop) {
+      position: static;
+      flex-shrink: 0.6;
+      width: auto;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 }

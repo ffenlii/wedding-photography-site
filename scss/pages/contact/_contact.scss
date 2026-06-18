@@ -4,11 +4,11 @@
   padding: 150px 0 130px;
 
   @media screen and (max-width: $bp-tablet) {
-    padding: 90px 0 98px;
+    padding: 70px 0 80px;
   }
 
   @media screen and (max-width: $bp-mobile) {
-    padding: 60px 0 80px;
+    padding: 60px 0 70px;
   }
 
   &__subtitle {
@@ -76,7 +76,6 @@
       );
       width: 80%;
       margin-bottom: 28px;
-
       font-size: 20px;
     }
 
@@ -98,8 +97,12 @@
       height: 230px;
       resize: none;
 
+      @media screen and (max-width: $bp-tablet) {
+        height: 160px;
+      }
+
       @media screen and (max-width: $bp-mobile) {
-        height: 170px;
+        height: 140px;
       }
     }
   }
